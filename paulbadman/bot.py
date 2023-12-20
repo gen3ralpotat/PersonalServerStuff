@@ -88,4 +88,5 @@ async def on_ready():
     Run the bot
 
 """
-bot.run('MTExMjkyMDA2NDM3MTQ2NjI4MQ.GQpHyX.ZexUuf8aDGCFMTLJG5MjyLUWPiL0OeGmR6Zfd4')
+
+bot.run('bot-token')
