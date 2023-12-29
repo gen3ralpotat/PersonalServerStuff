@@ -29,7 +29,7 @@ def add_attachment(ctx : constants.DISCORD_PY_CONTEXT,name : str):
     return f"this sticker can be used by typing `{constants.COMMAND_PREFIX}get {name}`"
 
 
-async def get_attachment(ctx : constants.DISCORD_PY_CONTEXT,name: str)-> str | None:
+async def get_attachment(ctx : constants.DISCORD_PY_CONTEXT,name: str)-> str:
     
     result = __ATTACHMENTS.find_one(name=name)
 
@@ -49,5 +49,5 @@ def list_saved(ctx : constants.DISCORD_PY_CONTEXT)->str:
     for row in results:
         names.append(row['name'])
 
-    return f'List of all saved attachments:{'\n- '}{('\n- '.join(names))}'
+    return 'List of all saved attachments:\n- '+ str('\n- '.join(names))
 

@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import botconstants
 import save_attachment
+from programmed_responses import check_for_triggers
 
 """
 
@@ -82,6 +83,16 @@ async def on_ready():
     print(f'Logged in as {bot.user} (ID: {bot.user.id})')
     print('------')
 
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+    result = check_for_triggers(message.content)
+    if result:
+        await message.channel.send(result)  
+
+    
+
 
 """
 
@@ -89,4 +100,4 @@ async def on_ready():
 
 """
 
-bot.run('bot-token')
+bot.run('MTExMjkyMDA2NDM3MTQ2NjI4MQ.Gq599P.LIRLrHqV9l25uVR0mZO1gb0R7VtnZFjt0gVI6U')
