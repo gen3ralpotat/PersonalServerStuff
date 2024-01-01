@@ -6,7 +6,7 @@
 # triggers = {"trigger1","trigger2","trigger..n"}
 
 #
-# Dialogs
+# Random Triggers
 #
 
 ["Better Call Saul!"]
@@ -21,6 +21,25 @@ triggers = [
     "TV",
     "arrest",
     "prison",
+]
+
+['No you did.']
+triggers = ["no I did not", 'no I didnt', "no I didn't"]
+
+["No you didn't."]
+triggers = ["I did", "no I did"]
+
+["No you shouldn't."]
+triggers = ['you should', "you all should", "you must", "do it"]
+
+["No you should."]
+triggers = [
+    'No you shouldnt',
+    "you all shouldnt",
+    "you must not",
+    "you should not",
+    "you all should not",
+    "do it",
 ]
 
 ["Don't you fucking Oh, Jimmy me!"]
@@ -73,14 +92,60 @@ triggers = [
 ["Who can you sue? Try police departments, libraries, construction companies, school officials, cleaning services, financial institutions (local and international), your neighbors, your family members, your church, synagogue or other religious institution, your employers, your employers' customers, suppliers, companies in other countries; companies that made the drugs that were turned into the drugs that you took. The possibilities are limitless!"]
 triggers = ["Who can I sue"]
 
-["Who can you not sue? Myself, and hopefully yourself."]
+["Well, partner, the list of folks you can't sue is shorter than a catnap in a lightning storm.\nGenerally, you can't just throw lawsuits around like confetti.\nBut hey, let's talk specifics, 'cause even in this wild west of legality, there are a few sacred cows.\nHow 'bout we sort through your case and figure out who's fair game and who's off-limits?"]
 triggers = ["Who can I not sue"]
+
+["Now we're cookin'!\nAsking about suing is like asking if I've got a drawer full of snazzy suits - the answer's usually yes, but it's all about whether it's worth the hustle.\nBefore we dive into the legal rodeo, let's corral the details. Give me the lowdown on your"]
+triggers = ["Can I sue"]
 
 ["Paul BadMan, law representative of Blahaj Society!"]
 triggers = ["rights"]
 
 ["Hi, I am Paul Badman.\nDid you just say you have rights? Well, not in China.\nI believe that until the Premier of the People's Republic of China says so,\n every man, woman and child is innocent.\nThat's why I am here to fight for you Shanghai!"]
 triggers = ["paul badman"]
+
+["Whoa there, pal! We're not playing a game of 'who can out-talk who.'\nLet's hit pause on the back-and-forth and focus on what really matters.\nHow about we find some common ground instead?"]
+triggers = ["shut up", "shut", "shh"]
+
+["Discord's the bee's knees! It's where the cool cats hang, swapping stories, gaming tricks, and more. With voice, video, and text, it's a hub for communities to shine. Sure, it's had hiccups, but it's a digital hotspot where friendships spark and the good times roll."]
+triggers = ['discord']
+
+["Hey, hey, hold the phone! Discord updates are like rearranging the furniture—takes a sec to get used to, but they're all about sprucing up the joint. Change can be a tough pill, but give it a chance; sometimes, it's the makeover the party needed all along."]
+triggers = ['discord update']
+
+["Whoa now, let's keep it PG-13! But hey, if we're talking big cats, I prefer my dealings with legal tigers. Let's steer clear of any jungle drama, shall we?"]
+triggers = ['tiger fucker']
+
+#
+#
+# Breaking bad series specific
+#
+#
+
+["Oh, Walter White, the man who flipped the script from chemistry teacher to chemistry legend! He took the highway to the danger zone, didn't he? I'll give him this, he had the skills to cook up some serious blue magic. But hey, let's just say his moral compass had a few magnets missing along the way. Walter White: a master of his craft, but a cautionary tale in the annals of breaking bad."]
+triggers = ['walter', 'walter white']
+
+#
+#
+# Blahaj Society Specific
+#
+#
+
+["Lucia, a psychologist and a dictator? Now, that's a combo you don't see every day! Let's use that iron-fist-in-a-velvet-glove approach, shall we? You analyze, I strategize, and together we'll navigate this legal landscape like a well-oiled machine."]
+triggers = ['lucia']
+
+["Abdul, my man of mystery! Military hacker, huh? Now that's some serious techno mojo. Let's unleash those digital artillery skills responsibly, okay? We'll navigate this legal minefield together, Abdul, and come out shining on the other side!"]
+triggers = ['abdul']
+
+["Oliver, my genius compadre! A brain that's practically AI-level? Now, that's what I call a mind on turbo mode. Let's channel that brilliance into some legal wizardry, Oliver! We're about to script some success stories that'll have everyone's jaws dropping."]
+triggers = ['oliver', 'oliver zhang']
+
+["Adil, my Renaissance rockstar! A philosopher, politician, doctor, and an idealist with a dash of Amarxism? That's quite the resume! Let's blend those ideologies into a legal symphony. With your diverse skill set, we'll paint the town with legal mastery and a touch of Amarxism flair!"]
+triggers = ['adil', 'adil amarsi']
+
+["Amarxism, my friend, it's like this fusion cuisine of ideologies: technocracy's the engine, meritocracy's the fuel, pragmatism's the steering wheel, and logic's the GPS. Throw in a dash of universal human rights, and you've got this utopian roadmap where brains rule, hard work pays off, common sense prevails, and everyone's got a seat at the table. It's like running a tight ship with a heart of gold—a system where brains, sweat, and fairness do the tango."]
+triggers = ['amarxism']
+
 
 #
 # LINKS
@@ -120,7 +185,7 @@ triggers = [
 triggers = ["time machine"]
 
 # 
-# Los Pollos Hermanos Vudeis
+# Los Pollos Hermanos Videos
 #
 
 # Los Pollos Hermanos Commerical
@@ -204,8 +269,3 @@ triggers = [
     "eco-friendly",
     "environmental friendly",
 ]
-
-# []
-# triggers=[
-#
-# ]

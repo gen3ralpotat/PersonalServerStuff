@@ -1,9 +1,18 @@
 from fuzzywuzzy import process
 import os
 import tomllib
+import random
 
-
-KEEP_YOUR_VOICE_LOW = "keep your voice low"
+KEEP_YOUR_VOICE_LOW_DIALOGUES = [
+    "Hey, amigo, slow your roll and smell the legal roses. Take a breather, count to ten, and let's tackle this storm one step at a time.",
+    "Chillax, my friend! Take a beat, sip some metaphorical chamomile tea, and let's dial it down a notch. We've got this in the bag.",
+    "Easy there, tiger! Take a chill pill, loosen that tie, and let's approach this like a Sunday drive. We'll smooth out the bumps, no sweat.",
+    "Whoa, pump the brakes! Take a cosmic timeout, breathe in, breathe out. We're not defusing a bomb here, just navigating life's rollercoaster.",
+    "Hold the phone, partner! Let's dial back the stress-o-meter, find our zen place. This ain't a sprint; it's a strategic marathon.",
+    "Slow your roll, my friend! Picture yourself on a hammock by the legal beach. Take a sip of serenity and let's approach this like a symphony, one calming note at a time.",
+    "Hey, simmer down! Imagine you're floating down a river of tranquility. Take a mental float and let's troubleshoot this with a cool head.",
+    "Easy, tiger! Picture yourself on a cloud of peace, counting the legal sheep. Let's put a pin in the panic and tackle this puzzle with a clear mind."
+]
 
 TRIGGERS = []
 RESPONSES = {}
@@ -24,7 +33,7 @@ def check_for_triggers(string: str):
 
     """
     if string.isupper():
-        return "Keep your voice low"
+        return random.choice(KEEP_YOUR_VOICE_LOW_DIALOGUES)
 
     result = process.extractOne(string, TRIGGERS, score_cutoff=90)
 
