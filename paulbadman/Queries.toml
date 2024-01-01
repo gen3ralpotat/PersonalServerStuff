@@ -1,0 +1,211 @@
+# Format
+# Any comments (to be ignored by parser) 
+# start with #
+# FOLLOW THIS FORMAT
+# ["response"]
+# triggers = {"trigger1","trigger2","trigger..n"}
+
+#
+# Dialogs
+#
+
+["Better Call Saul!"]
+triggers = [
+    "lawyer",
+    "late-night",
+    "late night",
+    "billboard",
+    "commercial",
+    "advertisement",
+    "advertizement",
+    "TV",
+    "arrest",
+    "prison",
+]
+
+["Don't you fucking Oh, Jimmy me!"]
+triggers = ["oh Jimmy"]
+
+["First thing's first, you're gonna put a dollar in my pocket. Both of you."]
+triggers = ["how?"]
+
+["Skylar! It's a beautiful name! Reminds me of a... big beautiful sky!"]
+triggers = ["skylar", "skyler"]
+
+["You kill my brother and you say you're sorry?"]
+triggers = ["I'm sorry", "sorry", "my bad", "mb"]
+
+["Don't drink and drive, but if you do, call me!"]
+triggers = ["good to meet you", "nice to meet you", "hello"]
+
+["I'll take a five! C'mon already. C'mon."]
+triggers = ["five", "fiver", "five-dollar", "$5", "5"]
+
+["What do I look like, your high school girlfriend?"]
+triggers = ["get me off", "get you off", "get off"]
+
+["Prostitutes and... bowling balls? You sound *unhinged*."]
+triggers = [
+    "prostitutes",
+    "bowling balls",
+    "what's weird",
+    "thrown at your car",
+    "sent to your business lunch",
+]
+
+["Walk away. That's right, Howard!"]
+triggers = ["walk away", "walks away"]
+
+["Witness tampering!"]
+triggers = ["tampering", "tamper", "witness", "testimony"]
+
+
+["Clearly his taste in women is the same as his taste in lawyers: Only the very best--with just the right amount of dirty!"]
+triggers = [
+    "have a type",
+    "have a preference",
+    "taste in women",
+    "my type",
+    "your type",
+    "uys prefer",
+]
+
+["Who can you sue? Try police departments, libraries, construction companies, school officials, cleaning services, financial institutions (local and international), your neighbors, your family members, your church, synagogue or other religious institution, your employers, your employers' customers, suppliers, companies in other countries; companies that made the drugs that were turned into the drugs that you took. The possibilities are limitless!"]
+triggers = ["Who can I sue"]
+
+["Who can you not sue? Myself, and hopefully yourself."]
+triggers = ["Who can I not sue"]
+
+["Paul BadMan, law representative of Blahaj Society!"]
+triggers = ["rights"]
+
+["Hi, I am Paul Badman.\nDid you just say you have rights? Well, not in China.\nI believe that until the Premier of the People's Republic of China says so,\n every man, woman and child is innocent.\nThat's why I am here to fight for you Shanghai!"]
+triggers = ["paul badman"]
+
+#
+# LINKS
+#
+
+# Saul Goodman Vietnam
+["https://www.youtube.com/watch?v=G2uC_7BYKAo"]
+triggers = [
+    "Vietnam",
+    "Southeast",
+    "Minh",
+    "Hanoi",
+    "Cambodia",
+    "Laos",
+    "Nguyen",
+]
+
+# Drippin' Jimmy
+["I have a better drip: https://shorturl.at/fovOX"]
+triggers = ["drip", "drippy", "swag", "style", "high fashion", "fashionable"]
+
+
+# Breaking Bad Edit
+["https://www.youtube.com/watch?v=3U6PSWyv5sc"]
+triggers = [
+    "breaking bad",
+    "chem",
+    "chemistry",
+    "meth",
+    "methamphetamine",
+    "substance use",
+    "drugs",
+]
+
+# Time Machine
+["https://www.youtube.com/watch?v=J_3oZYwAOmo"]
+triggers = ["time machine"]
+
+# 
+# Los Pollos Hermanos Vudeis
+#
+
+# Los Pollos Hermanos Commerical
+["https://www.youtube.com/watch?v=e_3WzxpdUc0"]
+triggers = [
+    "gus",
+    "los pollos hermanos",
+    "chicken",
+    "kfc",
+    "popeyes",
+    "mary brown",
+    "fast food",
+    "fries",
+    "gustavo",
+    "gustavo fring",
+]
+
+# Los Pollos Hermanos Employee Training: Communication
+["https://www.youtube.com/watch?v=B9RgougnhiE&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=10"]
+triggers = ["communication", "communication training", "tone"]
+
+# Los Pollos Hermanos Employee Training: Code of Conduct
+["https://www.youtube.com/watch?v=OTDlbmBoFIs&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=6"]
+triggers = ["code of conduct", "core values", "ethics", "ethical values"]
+
+# Los Pollos Hermanos Employee Training: Customer Service
+["https://www.youtube.com/watch?v=547FLQEjdF8&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=7"]
+triggers = ["customer service"]
+
+# Los Pollos Hermanos Employee Training: Cleanliness
+["https://www.youtube.com/watch?v=OJ10cVu2R5I&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=9"]
+triggers = ["cleanliness", "hygiene", "cleaning services"]
+
+# Los Pollos Hermanos Employee Training: Shipping Services
+["https://www.youtube.com/watch?v=fH_vg7mSS2M&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=8"]
+triggers = ["suppliers", "shipping", "shipping service"]
+
+# Los Pollos Hermanos Employee Training: Loss Prevention
+["https://www.youtube.com/watch?v=ELC0ZzD5qeE&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=5"]
+triggers = [
+    "loss",
+    "loss prevention",
+    "protect",
+    "risk",
+    "operational security",
+    "security",
+]
+
+# Los Pollos Hermanos Employee Training: Conflict Resoultion
+["https://www.youtube.com/watch?v=Vpdoy8KBFdo&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=2"]
+triggers = [
+    "disagreement",
+    "conflict",
+    "dispute",
+    "fighting",
+    "upset",
+    "angry",
+    "salty",
+    "conflict resolution",
+]
+
+# Los Pollos Hermanos Employee Training: Emergency Situations
+["https://www.youtube.com/watch?v=lSHaBnRd9MU&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=1"]
+triggers = ["emergyency", "danger", "hazard", ""]
+
+# Los Pollos Hermanos Employee Training: Brand Management
+["https://www.youtube.com/watch?v=juWdP2nGRqc&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=4"]
+triggers = [
+    "advertising",
+    "brand",
+    "public reputation",
+    "pr",
+    "reputation",
+    "community outreach",
+]
+
+["https://www.youtube.com/watch?v=XgYIRpnu8lo&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=3"]
+triggers = [
+    "sustainability",
+    "sustainable",
+    "eco-friendly",
+    "environmental friendly",
+]
+
+# []
+# triggers=[
+#
+# ]
