@@ -165,12 +165,12 @@ triggers = [
 ]
 
 # Drippin' Jimmy
-["I have a better drip: https://shorturl.at/fovOX"]
+["<https://shorturl.at/fovOX>"]
 triggers = ["drip", "drippy", "swag", "style", "high fashion", "fashionable"]
 
 
 # Breaking Bad Edit
-["https://www.youtube.com/watch?v=3U6PSWyv5sc"]
+["<https://www.youtube.com/watch?v=3U6PSWyv5sc>"]
 triggers = [
     "breaking bad",
     "chem",
@@ -182,7 +182,7 @@ triggers = [
 ]
 
 # Time Machine
-["https://www.youtube.com/watch?v=J_3oZYwAOmo"]
+["<https://www.youtube.com/watch?v=J_3oZYwAOmo>"]
 triggers = ["time machine"]
 
 # 
@@ -190,7 +190,7 @@ triggers = ["time machine"]
 #
 
 # Los Pollos Hermanos Commerical
-["https://www.youtube.com/watch?v=e_3WzxpdUc0"]
+["<https://www.youtube.com/watch?v=e_3WzxpdUc0>"]
 triggers = [
     "popeyes",
     "los pollos hermanos",

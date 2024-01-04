@@ -32,7 +32,7 @@ def check_for_triggers(string: str):
             or else returns none
 
     """
-    if string.isupper() and len(string) >= 50:
+    if string.isupper() and len(string) >= 250:
         return random.choice(KEEP_YOUR_VOICE_LOW_DIALOGUES)
 
     result = process.extractOne(string, TRIGGERS, score_cutoff=95)
