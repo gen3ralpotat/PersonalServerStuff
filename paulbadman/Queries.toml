@@ -11,6 +11,7 @@
 
 ["Better Call Saul!"]
 triggers = [
+    "better call saul",
     "lawyer",
     "late-night",
     "late night",
@@ -52,7 +53,7 @@ triggers = ["how?"]
 triggers = ["skylar", "skyler"]
 
 ["You kill my brother and you say you're sorry?"]
-triggers = ["I'm sorry", "sorry", "my bad", "mb"]
+triggers = ["I'm sorry", "sorry", "my bad"]
 
 ["Don't drink and drive, but if you do, call me!"]
 triggers = ["good to meet you", "nice to meet you", "hello"]
@@ -191,7 +192,6 @@ triggers = ["time machine"]
 # Los Pollos Hermanos Commerical
 ["https://www.youtube.com/watch?v=e_3WzxpdUc0"]
 triggers = [
-    "gus",
     "los pollos hermanos",
     "chicken",
     "kfc",
