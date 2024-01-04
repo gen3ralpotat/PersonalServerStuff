@@ -1,6 +1,6 @@
 from fuzzywuzzy import process
 import os
-import tomllib
+import toml
 import random
 
 KEEP_YOUR_VOICE_LOW_DIALOGUES = [
@@ -17,13 +17,13 @@ KEEP_YOUR_VOICE_LOW_DIALOGUES = [
 TRIGGERS = []
 RESPONSES = {}
 
-with open(os.path.dirname(os.path.realpath(__file__)) + os.path.sep + "Queries.toml", 'rb') as fp:
-    Queries = tomllib.load(fp)
-    for query in Queries:
-        for trigger in Queries.get(query).get("triggers"):
-            TRIGGERS.append(trigger)
-            RESPONSES[trigger] = query
-    del Queries
+Queries = toml.load(os.path.dirname(
+    os.path.realpath(__file__)) + os.path.sep + "Queries.toml")
+for query in Queries:
+    for trigger in Queries.get(query).get("triggers"):
+        TRIGGERS.append(trigger)
+        RESPONSES[trigger] = query
+del Queries
 
 
 def check_for_triggers(string: str):
@@ -32,10 +32,10 @@ def check_for_triggers(string: str):
             or else returns none
 
     """
-    if string.isupper():
+    if string.isupper() and len(string) >= 50:
         return random.choice(KEEP_YOUR_VOICE_LOW_DIALOGUES)
 
-    result = process.extractOne(string, TRIGGERS, score_cutoff=90)
+    result = process.extractOne(string, TRIGGERS, score_cutoff=95)
 
     if result:
         return RESPONSES[result[0]]

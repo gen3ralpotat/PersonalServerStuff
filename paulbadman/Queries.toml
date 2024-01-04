@@ -53,7 +53,7 @@ triggers = ["how?"]
 triggers = ["skylar", "skyler"]
 
 ["You kill my brother and you say you're sorry?"]
-triggers = ["I'm sorry", "sorry", "my bad"]
+triggers = ["I'm sorry", "sorry", "my bad", "mb"]
 
 ["Don't drink and drive, but if you do, call me!"]
 triggers = ["good to meet you", "nice to meet you", "hello"]
@@ -192,80 +192,13 @@ triggers = ["time machine"]
 # Los Pollos Hermanos Commerical
 ["https://www.youtube.com/watch?v=e_3WzxpdUc0"]
 triggers = [
+    "popeyes",
     "los pollos hermanos",
     "chicken",
     "kfc",
-    "popeyes",
     "mary brown",
     "fast food",
     "fries",
     "gustavo",
     "gustavo fring",
-]
-
-# Los Pollos Hermanos Employee Training: Communication
-["https://www.youtube.com/watch?v=B9RgougnhiE&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=10"]
-triggers = ["communication", "communication training", "tone"]
-
-# Los Pollos Hermanos Employee Training: Code of Conduct
-["https://www.youtube.com/watch?v=OTDlbmBoFIs&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=6"]
-triggers = ["code of conduct", "core values", "ethics", "ethical values"]
-
-# Los Pollos Hermanos Employee Training: Customer Service
-["https://www.youtube.com/watch?v=547FLQEjdF8&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=7"]
-triggers = ["customer service"]
-
-# Los Pollos Hermanos Employee Training: Cleanliness
-["https://www.youtube.com/watch?v=OJ10cVu2R5I&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=9"]
-triggers = ["cleanliness", "hygiene", "cleaning services"]
-
-# Los Pollos Hermanos Employee Training: Shipping Services
-["https://www.youtube.com/watch?v=fH_vg7mSS2M&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=8"]
-triggers = ["suppliers", "shipping", "shipping service"]
-
-# Los Pollos Hermanos Employee Training: Loss Prevention
-["https://www.youtube.com/watch?v=ELC0ZzD5qeE&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=5"]
-triggers = [
-    "loss",
-    "loss prevention",
-    "protect",
-    "risk",
-    "operational security",
-    "security",
-]
-
-# Los Pollos Hermanos Employee Training: Conflict Resoultion
-["https://www.youtube.com/watch?v=Vpdoy8KBFdo&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=2"]
-triggers = [
-    "disagreement",
-    "conflict",
-    "dispute",
-    "fighting",
-    "upset",
-    "angry",
-    "salty",
-    "conflict resolution",
-]
-
-# Los Pollos Hermanos Employee Training: Emergency Situations
-["https://www.youtube.com/watch?v=lSHaBnRd9MU&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=1"]
-triggers = ["emergyency", "danger", "hazard", ""]
-
-# Los Pollos Hermanos Employee Training: Brand Management
-["https://www.youtube.com/watch?v=juWdP2nGRqc&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=4"]
-triggers = [
-    "advertising",
-    "brand",
-    "public reputation",
-    "pr",
-    "reputation",
-    "community outreach",
-]
-
-["https://www.youtube.com/watch?v=XgYIRpnu8lo&list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&index=3"]
-triggers = [
-    "sustainability",
-    "sustainable",
-    "eco-friendly",
-    "environmental friendly",
 ]
