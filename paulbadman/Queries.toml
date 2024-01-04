@@ -87,25 +87,25 @@ triggers = [
     "taste in women",
     "my type",
     "your type",
-    "uys prefer",
+    "guys prefer",
 ]
 
 ["Who can you sue? Try police departments, libraries, construction companies, school officials, cleaning services, financial institutions (local and international), your neighbors, your family members, your church, synagogue or other religious institution, your employers, your employers' customers, suppliers, companies in other countries; companies that made the drugs that were turned into the drugs that you took. The possibilities are limitless!"]
 triggers = ["Who can I sue"]
 
-["Well, partner, the list of folks you can't sue is shorter than a catnap in a lightning storm.\nGenerally, you can't just throw lawsuits around like confetti.\nBut hey, let's talk specifics, 'cause even in this wild west of legality, there are a few sacred cows.\nHow 'bout we sort through your case and figure out who's fair game and who's off-limits?"]
+["Well, partner, the list of folks you can't sue is shorter than a catnap in a lightning storm. Generally, you can't just throw lawsuits around like confetti. But hey, let's talk specifics, 'cause even in this wild west of legality, there are a few sacred cows. How 'bout we sort through your case and figure out who's fair game and who's off-limits?"]
 triggers = ["Who can I not sue"]
 
-["Now we're cookin'!\nAsking about suing is like asking if I've got a drawer full of snazzy suits - the answer's usually yes, but it's all about whether it's worth the hustle.\nBefore we dive into the legal rodeo, let's corral the details. Give me the lowdown on your"]
+["Now we're cookin'! Asking about suing is like asking if I've got a drawer full of snazzy suits - the answer's usually yes, but it's all about whether it's worth the hustle. Before we dive into the legal rodeo, let's corral the details. Give me the lowdown on your"]
 triggers = ["Can I sue"]
 
 ["Paul BadMan, law representative of Blahaj Society!"]
 triggers = ["rights"]
 
-["Hi, I am Paul Badman.\nDid you just say you have rights? Well, not in China.\nI believe that until the Premier of the People's Republic of China says so,\n every man, woman and child is innocent.\nThat's why I am here to fight for you Shanghai!"]
-triggers = ["paul badman"]
+["Hi, I am Paul Badman. Did you just say you have rights? Well, not in China. I believe that until the Premier of the People's Republic of China says so, every man, woman and child is innocent. That's why I am here to fight for you Shanghai!"]
+triggers = ["paul badman", "rights", "human rights"]
 
-["Whoa there, pal! We're not playing a game of 'who can out-talk who.'\nLet's hit pause on the back-and-forth and focus on what really matters.\nHow about we find some common ground instead?"]
+["Whoa there, pal! We're not playing a game of 'who can out-talk who. Let's hit pause on the back-and-forth and focus on what really matters. How about we find some common ground instead?"]
 triggers = ["shut up", "shut", "shh"]
 
 ["Discord's the bee's knees! It's where the cool cats hang, swapping stories, gaming tricks, and more. With voice, video, and text, it's a hub for communities to shine. Sure, it's had hiccups, but it's a digital hotspot where friendships spark and the good times roll."]
