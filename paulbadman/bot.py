@@ -68,7 +68,7 @@ async def sync(ctx: commands.Context):
 async def new(interaction: discord.Interaction, sound_name: str, sound_file: discord.Attachment):
     # checks for valid file format
     if sound_file.content_type != "audio/mpeg":
-        await interaction.response.send_message("Sound is not in mpeg file format")
+        await interaction.response.send_message("Sound is not in mpeg file format", ephemeral=True)
         return
     
     # loads serversounds.json to variable sounds_json as a dict (find a better way to do this bc json just aint it)
@@ -84,7 +84,7 @@ async def new(interaction: discord.Interaction, sound_name: str, sound_file: dis
     
     # if sound name already in server
     if sound_name in sounds_json["sounds"][str(interaction.guild.id)]:
-        await interaction.response.send_message(f"Sound with name `{sound_name}` already exists for server")
+        await interaction.response.send_message(f"Sound with name `{sound_name}` already exists for server", ephemeral=True)
         return
     
     # update json variable
@@ -99,7 +99,7 @@ async def new(interaction: discord.Interaction, sound_name: str, sound_file: dis
         json.dump(sounds_json, json_file)
         
     # send confirmation
-    await interaction.response.send_message(f"Sound `{sound_name}` successfully added to server")
+    await interaction.response.send_message(f"Sound `{sound_name}` successfully added to server", ephemeral=True)
 
     
     
@@ -114,7 +114,7 @@ async def list(interaction: discord.Interaction):
         
     # if server has no sounds
     if interaction.guild.id not in sounds_json["servers"]:
-        await interaction.response.send_message(f"Server not registered")
+        await interaction.response.send_message(f"Server not registered", ephemeral=True)
         return 
     
     # send sounds ephemerally (preferably in a better way)
@@ -125,7 +125,7 @@ async def list(interaction: discord.Interaction):
 async def play(interaction: discord.Interaction, sound_name: str):
     # if no args provided
     if sound_name is None:
-        await interaction.response.send_message("No sound name provided")
+        await interaction.response.send_message("No sound name provided", ephemeral=True)
         return
     
     # loads serversounds.json to variable sounds_json as a dict
@@ -138,12 +138,12 @@ async def play(interaction: discord.Interaction, sound_name: str):
     
     # if server has no sounds
     if interaction.guild.id not in sounds_json["servers"]:
-        await interaction.response.send_message("No sounds for server found")
+        await interaction.response.send_message("No sounds for server found", ephemeral=True)
         return
     
     # if sound not in server
     if sound_name not in sounds_json["sounds"][str(interaction.guild.id)]:
-        await interaction.response.send_message(f"No sound with name {sound_name} found for server")
+        await interaction.response.send_message(f"No sound with name {sound_name} found for server", ephemeral=True)
         return
             
             
@@ -152,11 +152,11 @@ async def play(interaction: discord.Interaction, sound_name: str):
     # voice_state => voice channel the invoker is in
     voice_state=interaction.user.voice
     if voice_state is None:
-        await interaction.response.send_message("User not in channel")
+        await interaction.response.send_message("User not in channel", ephemeral=True)
     else:
         # i dont like red lines (but they're still everywhere o_o)
         if voice_state.channel is None:
-            await interaction.response.send_message("channel is none?")
+            await interaction.response.send_message("channel is none?", ephemeral=True)
         else:
             # gets bot's currently connected voice channel
             currently_connected = interaction.guild.voice_client
@@ -182,7 +182,7 @@ async def play(interaction: discord.Interaction, sound_name: str):
                 channel.stop()
                 
             channel.play(discord.FFmpegPCMAudio(source=f"{bot_path}/sounds/{interaction.guild.id}/{sound_name}.mp3"))
-            await interaction.response.send_message(f"Playing sound `{sound_name}`")
+            await interaction.response.send_message(f"Playing sound `{sound_name}`", ephemeral=True)
             
 
 @tree.command(name="stop", description="Stops currently playing sound")
@@ -191,11 +191,11 @@ async def stop(interaction: discord.Interaction):
     if currently_connected is not None:
         if currently_connected.is_playing() or currently_connected.is_paused():
             currently_connected.stop()
-            await interaction.response.send_message("Stopped")
+            await interaction.response.send_message("Stopped", ephemeral=True)
         else:
-            await interaction.response.send_message("No sound playing")
+            await interaction.response.send_message("No sound playing", ephemeral=True)
     else:
-        await interaction.response.send_message("Bot not connected to channel")
+        await interaction.response.send_message("Bot not connected to channel", ephemeral=True)
             
             
 @tree.command(name="pause", description="Pauses currently playing sound")
@@ -204,11 +204,11 @@ async def pause(interaction: discord.Interaction):
     if currently_connected is not None:
         if currently_connected.is_playing():
             currently_connected.pause()
-            await interaction.response.send_message("Paused")
+            await interaction.response.send_message("Paused", ephemeral=True)
         else:
-            await interaction.response.send_message("No sound playing")
+            await interaction.response.send_message("No sound playing", ephemeral=True)
     else:
-        await interaction.response.send_message("Bot not connected to channel")
+        await interaction.response.send_message("Bot not connected to channel", ephemeral=True)
             
             
 @tree.command(name="resume", description="Resumes currently paused sound")
@@ -217,11 +217,11 @@ async def resume(interaction: discord.Interaction):
     if currently_connected is not None:
         if currently_connected.is_paused():
             currently_connected.resume()
-            await interaction.response.send_message("Unpaused")
+            await interaction.response.send_message("Unpaused", ephemeral=True)
         else:
-            await interaction.response.send_message("No sound paused")
+            await interaction.response.send_message("No sound paused", ephemeral=True)
     else:
-        await interaction.response.send_message("Bot not connected to channel")
+        await interaction.response.send_message("Bot not connected to channel", ephemeral=True)
             
     
 @bot.hybrid_command()
@@ -237,4 +237,4 @@ async def shutdown(ctx: commands.Context):
 """
 
 
-bot.run()
+bot.run(token="TOKEN")
