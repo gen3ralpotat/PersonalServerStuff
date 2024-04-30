@@ -4,6 +4,9 @@ COMMAND_PREFIX = '!'
 
 DISCORD_PY_CONTEXT = commands.Context
 
+# Absolute path to bot, used to find sound files
+PATH = "/home/gen3ralpotat/gen3ralpotat/coding/discord/soundboard/PersonalServerStuff/paulbadman"
+
 BOT_DESCRIPTION = '''
 Paul BadMan, law representative of Blahaj Society!'''
 
